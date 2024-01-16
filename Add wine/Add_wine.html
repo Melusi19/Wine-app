@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add/Edit Wine</title>
+    <link rel="stylesheet" href="add_wine.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form action="/Add wine/Add_wine.html" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" value="Kidge" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Year</label>
+                    <input type="number" class="form-control" id="year" value="2009" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select name="type" id="type">
+                        <option value="red">Red</option>
+                        <option value="white">White</option>
+                        <option value="rose">Rose</option>
+                        <option value="white blend">WHITE_BLEND</option>
+                        <option value="red blend">RED_BLEND</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="varietal">Varietal</label>
+                    <input type="text" class="form-control" id="varietal" value="Cabernet Savignon, Merlot, Shiraz, Durif" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <input type="number" step="0.1" class="form-control" id="rating" value="4.9" required>
+                </div>
+                <div class="form-group">
+                    <label for="consumed">Consumed</label>
+                    <select class="form-control" id="consumed">
+                        <option value="V" selected>Yes</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+                <div class="wrapper">
+                    <label for="datepicker">Pick a Date <input type="text" id="datepicker" autocomplete="off"></label>	
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="edit" class="btn btn-primary">Edit</button>
+            </form>
+        </div>
+    </section>    
+</body>
+</html>
